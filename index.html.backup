@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechGeeks Computer Science Club - New Generation, Infinite Innovation">
+    <title>TechGeeks | Computer Science Club</title>
+
+    <!-- Google Fonts - Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="techgeeks logo and visual/logo.png" alt="TechGeeks Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#join" class="nav-link">Join Us</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="techgeeks logo and visual/logo.png" alt="TechGeeks Logo">
+                </div>
+                <p class="hero-subtitle">Computer Science Club</p>
+                <div class="hero-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    2025 Registration Now Open
+                </div>
+                <h1 class="hero-title">
+                    Join the <span class="hero-title-highlight orange">New</span> <span class="hero-title-highlight teal">Generation</span><br>
+                    of Innovators
+                </h1>
+                <p class="hero-description">
+                    Empowering students to explore, create, and innovate in the world of technology.
+                    Join us in shaping the future through code, collaboration, and creativity.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#join" class="btn btn-primary">Join the Club</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>
+                        TechGeeks is a vibrant community of passionate students dedicated to exploring
+                        the limitless possibilities of computer science and technology. We believe in
+                        the power of innovation to transform ideas into reality.
+                    </p>
+                    <h3>What We Stand For</h3>
+                    <p>
+                        We stand for continuous learning, creative problem-solving, and collaborative
+                        growth. Our mission is to create an inclusive environment where every member
+                        can develop their technical skills, share knowledge, and build projects that matter.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Active Members</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Workshops Hosted</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-grid">
+                        <div class="visual-item" style="--delay: 0s;">
+                            <div class="visual-icon">🎯</div>
+                            <h4>Mission-Driven</h4>
+                            <p>Focused on making technology accessible to all</p>
+                        </div>
+                        <div class="visual-item" style="--delay: 0.1s;">
+                            <div class="visual-icon">🌟</div>
+                            <h4>Excellence</h4>
+                            <p>Committed to quality in everything we create</p>
+                        </div>
+                        <div class="visual-item" style="--delay: 0.2s;">
+                            <div class="visual-icon">🔄</div>
+                            <h4>Innovation</h4>
+                            <p>Constantly exploring new technologies</p>
+                        </div>
+                        <div class="visual-item" style="--delay: 0.3s;">
+                            <div class="visual-icon">👥</div>
+                            <h4>Community</h4>
+                            <p>Building lasting connections through tech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Activities & Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Discover what we're building and learning together</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon" style="--icon-color: #0073B7;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Coding Workshops</h3>
+                    <p>
+                        Regular hands-on sessions covering various programming languages, frameworks,
+                        and development practices. From beginners to advanced levels.
+                    </p>
+                    <ul class="activity-tags">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Web Dev</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon" style="--icon-color: #F7931E;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Hackathons</h3>
+                    <p>
+                        Intense coding competitions where teams collaborate to build innovative solutions
+                        to real-world problems in 24-48 hours.
+                    </p>
+                    <ul class="activity-tags">
+                        <li>Innovation</li>
+                        <li>Teamwork</li>
+                        <li>Prizes</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon" style="--icon-color: #EA5B7C;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Open Source Projects</h3>
+                    <p>
+                        Collaborative development of tools, applications, and libraries that benefit
+                        the wider tech community and solve local challenges.
+                    </p>
+                    <ul class="activity-tags">
+                        <li>GitHub</li>
+                        <li>Collaboration</li>
+                        <li>Impact</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon" style="--icon-color: #0073B7;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Tech Talks</h3>
+                    <p>
+                        Guest speakers, alumni, and industry professionals share insights on emerging
+                        technologies, career paths, and the future of tech.
+                    </p>
+                    <ul class="activity-tags">
+                        <li>Learning</li>
+                        <li>Networking</li>
+                        <li>Inspiration</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon" style="--icon-color: #F7931E;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Mentorship Program</h3>
+                    <p>
+                        Experienced members guide newcomers through their tech journey, providing
+                        support, code reviews, and career advice.
+                    </p>
+                    <ul class="activity-tags">
+                        <li>Guidance</li>
+                        <li>Growth</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon" style="--icon-color: #EA5B7C;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>AI & ML Study Groups</h3>
+                    <p>
+                        Deep dive into artificial intelligence and machine learning through group
+                        studies, paper readings, and practical model building.
+                    </p>
+                    <ul class="activity-tags">
+                        <li>AI/ML</li>
+                        <li>Research</li>
+                        <li>Future Tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-us" id="join">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join Our Community</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Ready to be part of something amazing? Sign up now!</p>
+            </div>
+            <div class="join-content">
+                <div class="join-info">
+                    <h3>Why Join TechGeeks?</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="benefit-icon">✨</span>
+                            <div>
+                                <strong>Skill Development</strong>
+                                <p>Learn cutting-edge technologies and best practices</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-icon">🌐</span>
+                            <div>
+                                <strong>Networking</strong>
+                                <p>Connect with like-minded peers and industry professionals</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-icon">🏆</span>
+                            <div>
+                                <strong>Competitions</strong>
+                                <p>Participate in hackathons and coding challenges</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-icon">📚</span>
+                            <div>
+                                <strong>Resources</strong>
+                                <p>Access to exclusive learning materials and tools</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join-form-container">
+                    <form id="joinForm" class="join-form">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                required
+                                placeholder="Enter your first name"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                required
+                                placeholder="Enter your last name"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number *</label>
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                required
+                                placeholder="+1 (555) 000-0000"
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Join TechGeeks</span>
+                            <span class="btn-loader"></span>
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="techgeeks logo and visual/logo.png" alt="TechGeeks Logo" class="footer-logo">
+                    <p class="footer-tagline">New Generation, Infinite Innovation</p>
+                    <p class="footer-description">
+                        Empowering the next generation of tech innovators through
+                        collaboration, learning, and hands-on experience.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#join">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@techgeeks.club">info@techgeeks.club</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Your Campus Location</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechGeeks Computer Science Club. All rights reserved.</p>
+                <p class="footer-made-with">Made with 💙 by TechGeeks</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

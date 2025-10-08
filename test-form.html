@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Google Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Google Form Submission</h1>
+    <p>This is a test form to verify the entry IDs are correct.</p>
+
+    <form id="testForm" action="https://docs.google.com/forms/d/e/1FAIpQLScmQ5j2KLqjnychz3PKwL3BY_isse6RIZjxcyFKw50Ah3PIsw/formResponse" method="POST" target="hidden_iframe">
+        <div class="form-group">
+            <label>First Name (entry.320785840)</label>
+            <input type="text" name="entry.320785840" value="Test" required>
+        </div>
+
+        <div class="form-group">
+            <label>Last Name (entry.391717116)</label>
+            <input type="text" name="entry.391717116" value="User" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender (entry.1660044428)</label>
+            <select name="entry.1660044428" required>
+                <option value="">Select</option>
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Email (entry.1199581864)</label>
+            <input type="email" name="entry.1199581864" value="test@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number (entry.854119240)</label>
+            <input type="tel" name="entry.854119240" value="+213 555 123 456" required>
+        </div>
+
+        <div class="form-group">
+            <label>Academic Year (entry.647587397)</label>
+            <select name="entry.647587397" required>
+                <option value="">Select</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="PhD">PhD</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>System (entry.217560225)</label>
+            <select name="entry.217560225" required>
+                <option value="">Select</option>
+                <option value="Engineer" selected>Engineer</option>
+                <option value="LMD">LMD</option>
+                <option value="Professional">Professional</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Tell us about yourself (entry.300353021)</label>
+            <textarea name="entry.300353021" rows="3" required>Test skills and hobbies</textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Why Do You Want To Join Us (entry.1920447428)</label>
+            <textarea name="entry.1920447428" rows="3" required>Test motivation message</textarea>
+        </div>
+
+        <button type="submit">Submit Test</button>
+    </form>
+
+    <div id="status"></div>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <script>
+        const form = document.getElementById('testForm');
+        const status = document.getElementById('status');
+        const iframe = document.getElementById('hidden_iframe');
+
+        form.addEventListener('submit', function() {
+            status.textContent = 'Submitting...';
+            status.className = '';
+        });
+
+        iframe.addEventListener('load', function() {
+            if (iframe.src) {
+                status.textContent = '✅ Form submitted successfully! Check your Google Form responses.';
+                status.className = 'success';
+                console.log('Form submitted to Google Forms');
+            }
+        });
+
+        // Also listen for errors
+        window.addEventListener('error', function(e) {
+            console.error('Error:', e);
+        });
+    </script>
+</body>
+</html>
